@@ -1,0 +1,391 @@
+ <!Doctype	html>
+<html	lang="en">
+	<head>
+		<link	type="text/css"	rel="stylesheet"	href="itog1.css">
+		<title>AdeliArt</title>
+		
+		<meta Charset="utf-8">
+		
+		
+	<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+var slideIndex = 1;
+ showSlides(slideIndex);
+
+ // Next/previous controls
+ function plusSlides(n) {
+  showSlides(slideIndex += n);
+ }
+
+ // Thumbnail image controls
+ function currentSlide(n) {
+   showSlides(slideIndex = n);
+ }
+
+ function showSlides(n) {
+   var i;
+   var slides = document.getElementsByClassName("mySlides");
+   var dots = document.getElementsByClassName("demo");
+   var captionText = document.getElementById("caption");
+   if (n > slides.length) {slideIndex = 1}
+   if (n < 1) {slideIndex = slides.length}
+   for (i = 0; i < slides.length; i++) {
+     slides[i].style.display = "none";
+   }
+   for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" active", "");
+   }
+   slides[slideIndex-1].style.display = "block";
+   dots[slideIndex-1].className += " active";
+   captionText.innerHTML = dots[slideIndex-1].alt;
+ }
+
+</script>		
+		
+	
+		
+	</head>	
+	<body>
+	
+<div id="podlozka">
+ <div id="menu">
+  <div class="topnav">
+   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+   </a>
+   <a href="#home" class="active"><img src="logo.jpg" alt="#" width="100" height="80"></a>
+   <div id="myLinks">
+    <a  href="#otstupzag1"><p class="menu2">Ettevõtte kohta</p></a>
+    <a  href="#otstupzag2"><p class="menu2">Teenused</p></a>
+    <a  href="#otstupzag3"><p class="menu2">Galerii</p></a>
+    <a  href="#otstupzag4"><p class="menu2">Kontaktid</p></a>
+     <div id="podlozka4">
+      <a href="file:///E:/itogovaja/itog1.html#home" id="buttonru"><img src="buttonru.jpg" alt="#" width="90" height="50"></a>
+      <a href="file:///E:/itogovaja/itog2.html#home" id="buttonee"><img src="buttonee.jpg" alt="#" width="90" height="52"></a>
+     </div>
+   </div>
+ </div>
+</div>
+ 
+ 
+ <div id="podlozka2">
+  <div class="fon"></div>
+  <div id="podlozka3">
+   <div id="shapka"></div>
+   <div id="animatsion">
+    <div id="otstup"></div>
+    <div id="font">
+      <span>I</span>
+      <span>d</span>
+      <span>e</span>
+      <span>e</span>
+	  <span>d</span>
+      <span>&nbsp;</span>
+      <span>a</span>
+      <span>l</span>
+      <span>g</span>
+      <span>a</span>
+      <span>v</span>
+      <span>a</span>
+      <span>d</span>
+      <span>&nbsp;</span>
+      <span>s</span>
+      <span>i</span>
+      <span>i</span>
+      <span>t</span>
+      <span>.</span>
+      <span>.</span>
+      <span>.</span>
+     </div>
+   </div>
+    <div id="otstupzag1"></div>
+   <div class="zagolovok">
+    <p class="zagolovoktext">Ettevõtte kohta</p>
+   </div>
+   <div id="ofirme">
+   <div id="ofirmeotstup"></div>
+    <p class="zagolovoktext">AdeliArt tegeleb käsitööna valminud toodete müügi<br> ja valmistamisega,<br> samuti korraldab meistrikursusi kõigile.</p>
+    <img class="vetka" src="vetka.jpg" alt="#" width="90" height="50">
+   </div>
+   <div id="otstupzag2"></div>
+   <div class="zagolovok">
+    <p class="zagolovoktext">Teenused</p>
+   </div>
+   <div id="uslugi">
+   <div id="uslugiotstup"></div>
+    <p class="zagolovoktext">Prillid, graveeringu<br>ja piltidega prillid igaks elujuhtumiks</p>
+	<img class="vetka" src="vetka.jpg" alt="#" width="90" height="50">
+	<p class="zagolovoktext">Epoksiidvaigutooted (võtmehoidjad,<br>serveerimislauad, spaatlid<br>ja telefonihoidjad)</p>
+	<img class="vetka" src="vetka.jpg" alt="#" width="90" height="50">
+	<p class="zagolovoktext">Käsitsi valmistatud seep (kimbud, loomad, meeste komplektid)</p>
+	<img class="vetka" src="vetka.jpg" alt="#" width="90" height="50">
+	<p class="zagolovoktext">Materjal epoksüvaiguga töötamiseks<br>(värvid, kuivpigmendid, tarvikud, <br>silikoonvormid, ehtevaik)</p>
+	<img class="vetka" src="vetka.jpg" alt="#" width="90" height="50">
+	<p class="zagolovoktext">Seebi valmistamise materjal<br>(silikoonvormid, mitterändevärvid<br>ja lõhnaained)</p>
+	<img class="vetka" src="vetka.jpg" alt="#" width="90" height="50">
+   
+   </div>
+   <div id="otstupzag3"></div>
+   <div class="zagolovok">
+    <p class="zagolovoktext">Galerii</p>
+   </div>
+   <div id="galerry">
+    <div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 24</div>
+      <img src="image.jpg" style="width:70%" alt="#">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 24</div>
+      <img src="image1.jpg" style="width:70%" alt="#">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 24</div>
+      <img src="image2.jpg" style="width:70%" alt="#">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 24</div>
+      <img src="image3.jpg" style="width:70%" alt="#">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 24</div>
+      <img src="image4.jpg" style="width:70%" alt="#">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 24</div>
+      <img src="image5.jpg" style="width:70%" alt="#">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">7 / 24</div>
+      <img src="image6.jpg" style="width:70%" alt="#">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">8 / 24</div>
+      <img src="image7.jpg" style="width:70%" alt="#">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">9 / 24</div>
+      <img src="image8.jpg" style="width:70%" alt="#">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">10 / 24</div>
+      <img src="image9.jpg" style="width:70%" alt="#">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">11 / 24</div>
+      <img src="image10.jpg" style="width:70%" alt="#">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">12 / 24</div>
+      <img src="image11.jpg" style="width:70%" alt="#">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">13 / 24</div>
+      <img src="image12.jpg" style="width:70%" alt="#">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">14 / 24</div>
+      <img src="image13.jpg" style="width:70%" alt="#">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">15 / 24</div>
+      <img src="image14.jpg" style="width:70%" alt="#">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">16 / 24</div>
+      <img src="image15.jpg" style="width:70%" alt="#">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">17 / 24</div>
+      <img src="image16.jpg" style="width:70%" alt="#">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">18 / 24</div>
+      <img src="image17.jpg" style="width:70%" alt="#">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">19 / 24</div>
+      <img src="image18.jpg" style="width:70%" alt="#">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">20 / 24</div>
+      <img src="image19.jpg" style="width:70%" alt="#">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">21 / 24</div>
+      <img src="image20.jpg" style="width:70%" alt="#">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">22 / 24</div>
+      <img src="image21.jpg" style="width:70%" alt="#">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">23 / 24</div>
+      <img src="image22.jpg" style="width:70%" alt="#">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">24 / 24</div>
+      <img src="image23.jpg" style="width:70%" alt="#">
+  </div>
+  
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+
+  <div class="row">
+  <div class="column">
+      <img class="demo cursor" src="image.jpg" style="width:100%" onclick="currentSlide(1)" alt="Kruusile trükkimine">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="image1.jpg" style="width:100%" onclick="currentSlide(2)" alt="Seebi kinkekomplekt">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="image2.jpg" style="width:100%" onclick="currentSlide(3)" alt="Pudeli kaunistus">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="image3.jpg" style="width:100%" onclick="currentSlide(4)" alt="Kruusile trükkimine">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="image4.jpg" style="width:100%" onclick="currentSlide(5)" alt="Seebi kimp">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="image5.jpg" style="width:100%" onclick="currentSlide(6)" alt="Kruusile trükkimine">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="image6.jpg" style="width:100%" onclick="currentSlide(7)" alt="Kipsist alus">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="image7.jpg" style="width:100%" onclick="currentSlide(8)" alt="Seebi kimp">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="image8.jpg" style="width:100%" onclick="currentSlide(9)" alt="Kipsist alus">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="image9.jpg" style="width:100%" onclick="currentSlide(10)" alt="Kinkekomplekt">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="image10.jpg" style="width:100%" onclick="currentSlide(11)" alt="Kinkekomplekt">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="image11.jpg" style="width:100%" onclick="currentSlide(12)" alt="Seebi kimp">
+    </div>
+	  <div class="column">
+      <img class="demo cursor" src="image12.jpg" style="width:100%" onclick="currentSlide(13)" alt="Epoksiidvaigust võtmehoidja">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="image13.jpg" style="width:100%" onclick="currentSlide(14)" alt="Kinkekomplekt">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="image14.jpg" style="width:100%" onclick="currentSlide(15)" alt="Seebiga kinkekomplekt">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="image15.jpg" style="width:100%" onclick="currentSlide(16)" alt="Kinkekomplekt">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="image16.jpg" style="width:100%" onclick="currentSlide(17)" alt="Kruusile trükkimine">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="image17.jpg" style="width:100%" onclick="currentSlide(18)" alt="Seep">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="image18.jpg" style="width:100%" onclick="currentSlide(19)" alt="Epoksiidvaigu alus">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="image19.jpg" style="width:100%" onclick="currentSlide(20)" alt="Kaup laadal">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="image20.jpg" style="width:100%" onclick="currentSlide(21)" alt="Epoksiidvaigu järjehoidja">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="image21.jpg" style="width:100%" onclick="currentSlide(22)" alt="Kruusile trükkimine">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="image22.jpg" style="width:100%" onclick="currentSlide(23)" alt="Kinkekomplekt">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="image23.jpg" style="width:100%" onclick="currentSlide(24)" alt="Šokolaadipakendi disain">
+    </div>
+  </div>
+
+</div>
+   
+   </div>
+   <div id="otstupzag4"></div>
+   <div class="zagolovok">
+    <p class="zagolovoktext">Kontaktid</p>
+   </div>
+   <div id="contact">
+   <div id="contactotstup"></div>
+    <div class="contactpodlozka">
+	 <img class="float2" src="tel.jpg" alt="#" width="90" height="70">
+	 <div class="float"><p class="text">+372 5828 0594</p></div>
+	</div>
+	
+	<div class="contactpodlozka">
+	 <img  class="float2" src="post.jpg" alt="#" width="90" height="70">
+	 <div class="float"><p class="text">adeliartou@gmail.com</p></div>
+    </div>
+    <div class="contactpodlozka">
+	 <img class="float2" src="map.jpg" alt="#" width="90" height="75">
+	  <div class="float"><p class="text">Eesti, Ida-Virumaa,<br>Narva, Kerese 20-310</p></div>
+    </div>
+   
+   </div>
+  
+  </div>
+    <div class="fon"></div>
+ 
+ </div>
+ 
+
+</div>
+
+
+<div id="podval">
+ <div id="otstuppodval"></div>
+ <div id="podlozkapodval">
+  <a  href="https://instagram.com/adeliart_ou?igshid=MzRlODBiNWFlZA"><img class="link" src="inst.png" alt="#" width="270" height="75"></a>
+  <div id="nado"></div>
+  <a  href="https://www.facebook.com/profile.php?id=100084173357852"><img class="link" src="face.png" alt="#" width="270" height="65"></a>
+ </div>
+ <div id="otstuppodval2"></div>
+ <img id="lisapodval" src="lisapodval.jpg" alt="#" width="260" height="130">
+</div>
+	</body>
